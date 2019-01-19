@@ -1,6 +1,18 @@
+/* global tag style */
+ul{
+    margin:0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color:black;
+    /* cursor: wait; */
+}
+
 #wrapper{
     width:1000px;
     margin: 0 auto;
+    padding-bottom: 100px;
 }
 img{
     width: 100%;
@@ -9,7 +21,75 @@ img{
     text-align: center;
     font-size: 2rem;
 }
-#header a{
-    text-decoration: none;
-    color:black;
+
+#nav ul{
+    list-style: none;
+}
+#nav ul li{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    background-color: #30064f;
+    padding:10px; 
+}
+#nav ul li a{
+    color:white; 
+}
+#nav ul.menus{
+    float: left;
+}
+#nav ul.icons{
+    float: right;
+}
+#main{
+    clear: both;
+}
+.featured{
+    margin-top:88px;
+}
+.featured header h2{
+    text-align: center;
+}
+#footer{
+    border-top: solid 1px #dde0e0;
+    padding-top: 30px;
+    display: flex;
+}
+#footer .contact,
+#footer .info{
+    flex:1;  /* 1은 가중치 비율*/
+    padding: 30px;
+}
+#footer .contact label,
+#footer .contact input{
+    display: block;
+}
+#footer .contact label{
+    margin-bottom: 10px;
+}
+#footer .contact input{
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 20px;
+}
+#footer .contact textarea{
+    box-sizing: border-box;
+    width: 100%;
+}
+#footer .info ul{
+    list-style: none;
+}
+#footer .info ul li{
+    display: inline-block;
+}
+#copyright{
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #30064f;
+    color:white;
 }
