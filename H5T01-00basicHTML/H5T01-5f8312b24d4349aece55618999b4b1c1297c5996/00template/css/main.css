@@ -20,6 +20,11 @@ img{
 #header{
     text-align: center;
     font-size: 2rem;
+    margin: 50px 0;
+}
+#nav{
+    height: 36px;
+    background-color: #30064f;
 }
 
 #nav ul{
@@ -29,8 +34,8 @@ img{
     display: inline-block;
     width: 100px;
     text-align: center;
-    background-color: #30064f;
-    padding:10px; 
+    padding:10px;
+    float: left; /*li 사이의 의도치 않은 여백을 제거*/ 
 }
 #nav ul li a{
     color:white; 
@@ -51,7 +56,6 @@ img{
     text-align: center;
 }
 #footer{
-    border-top: solid 1px #dde0e0;
     padding-top: 30px;
     display: flex;
 }
@@ -63,6 +67,11 @@ img{
 #footer .contact label,
 #footer .contact input{
     display: block;
+}
+#footer .contact input[type=submit]{
+    background-color:#30064f;
+    padding: 20px;
+    color: white;
 }
 #footer .contact label{
     margin-bottom: 10px;
@@ -90,6 +99,6 @@ img{
     width: 100%;
     padding: 20px;
     text-align: center;
-    background-color: #30064f;
+    background-color: #220437;
     color:white;
 }
